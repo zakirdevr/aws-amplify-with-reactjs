@@ -1,0 +1,46 @@
+1. npm install -g @aws-amplify/cli
+2. npx create-react-app amplify-react-app
+3. amplify configure
+4. Specify the AWS Region
+   ? region:(Use arrow keys)
+     >us-east-2
+   
+   Specify the username of the new IAM user:
+   user name: UserName
+5. After Creating User
+     Enter the access key of the newly created user:
+     ?accessKeyId: ****************
+     ?secretAccesskey: ************************
+      
+     ?Profile Name: UserName
+
+6. amplify init
+   ?Enter a name for the project amplifyreactapp
+   ?Enter a name for the environment (dev) Enter
+   ?Choose your default editor: (Use arrow keys)
+     >Visual Studio Code
+   ?Choose the type of app that you're building
+     >javascript
+   ?What javascript framework are you using (Use arrow keys)
+     >react
+
+   ?Source Directory Path: (src) Enter
+   ?Distribution Directory Path: (build) Enter
+   ?Build Command: (npm run-script build) Enter
+   ?Start Command: (npm run-script start) Enter
+   ?Do you want to use an AWS profile? (Y/n) y
+   ?Please choose the profile you want to use
+     >UserName
+
+7. amplify add auth
+    Do you want to use the default authentication and security configuration
+     >Default configuration
+    How do you want users to be sign in?
+     >Email
+    Do you want to configure advanced settings?
+     >No, I am done
+
+8. amplify push
+    Are you sure want to continue?(Y/n) y
+
+
